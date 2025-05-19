@@ -208,3 +208,51 @@ h3 {
     padding: var(--padding-container);
     margin-top: var(--margin-top-standard);
 }
+/* 
+const selectStyles = {
+        control: (base, state) => ({
+            ...base,
+            minHeight: '46px',
+            height: '46px',
+            borderRadius: '6px',
+            fontSize: '1rem',
+            boxShadow: state.isFocused ? '0 0 0 1px #004B81' : 'none',
+            borderColor: state.isFocused ? '#004B81' : '#ddd',
+            '&:hover': {
+                borderColor: state.isFocused ? '#004B81' : '#aaa',
+            },
+            padding: '0 0.25rem',
+            width: '12rem',
+        }),
+        menu: (base) => ({
+            ...base,
+            zIndex: 9999,
+            marginTop: '0',
+        }),
+        menuList: (base) => ({
+            ...base,
+            padding: '0',
+        }),
+        option: (base, state) => ({
+            ...base,
+            backgroundColor: state.isSelected ? '#004B81' : state.isFocused ? '#f0f8ff' : null,
+            color: state.isSelected ? 'white' : 'black',
+            padding: '8px 12px',
+        }),
+        placeholder: (base) => ({
+            ...base,
+            color: '#aaa',
+        }),
+        singleValue: (base) => ({
+            ...base,
+            color: '#333',
+        }),
+        valueContainer: (base) => ({
+            ...base,
+            padding: '2px 8px',
+        }),
+        dropdownIndicator: (base) => ({
+            ...base,
+            padding: '8px',
+        }),
+    }; */
