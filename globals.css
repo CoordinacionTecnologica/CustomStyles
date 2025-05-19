@@ -197,3 +197,14 @@ h3 {
 .centro-info-card .form-group-separador {
     margin-top: 0;
 }
+
+.custom-form {
+    display: flex
+;
+    flex-direction: column;
+    height: auto;
+    overflow-y: visible;
+    gap: 1rem;
+    padding: var(--padding-container);
+    margin-top: var(--margin-top-standard);
+}
