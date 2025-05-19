@@ -155,13 +155,45 @@ h3 {
     font-size: 1.2rem;
 }
 /* Botones */
-.submit-btn-primary {
+.submit-btn-large {
     cursor: pointer;
     transition: var(--transition-default);
     background-color: var(--color-primary); 
-    color:white;  
+    color:white;
+    width: 10rem;
+    padding: 1rem;
+    text-wrap: nowrap;
+    border-radius: var(--border-radius);
 }
-.submit-btn-primary:hover {
+.submit-btn-large:hover {
     background-color: var(--color-primary-hover);
     box-shadow: var(--box-shadow);
+}
+.submit-btn-medium {
+    cursor: pointer;
+    transition: var(--transition-default);
+    background-color: var(--color-primary); 
+    color:white;
+    width: 7rem;
+    padding: 1rem;
+    text-wrap: nowrap;
+    border-radius: var(--border-radius);
+}
+.submit-btn-medium:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: var(--box-shadow);
+}
+/* Tarjeta de información del centro */
+.centro-info-card {
+    background-color: #f5f8fa;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+    border: 1px solid #e1e8ed;
+    border-left: 4px solid var(--color-primary);
+}
+
+.centro-info-card .form-group-separador {
+    margin-top: 0;
 }
