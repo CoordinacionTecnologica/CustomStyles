@@ -6,6 +6,9 @@
     --color-text: #333333;
     --color-text-secondary: #555;
     --color-border: #e0e0e0;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --color-error: #dc3545;
+    --color-primary-hover: #003366;
 
     --font-family-sans-serif: 'Helvetica Neue', Arial, sans-serif;
     --font-family-serif: 'Georgia', serif;
@@ -24,6 +27,8 @@
     --border-radius-sm: 2px;
 
     --transition-duration: 0.3s;
+    --padding-container: 30px 1.6rem; /* Estandarizado para contenedores */
+    --margin-top-standard: 0; /* Margen superior estandarizado */
 }
 
 /* SEPARADORES Y SUBTITULOS */
@@ -129,4 +134,34 @@
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     font-size: 1rem;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: var(--color-text-primary);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+/* Botones */
+.submit-btn-primary {
+    cursor: pointer;
+    transition: var(--transition-default);
+    background-color: var(--color-primary); 
+    color:white;  
+}
+.submit-btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: var(--box-shadow);
 }
