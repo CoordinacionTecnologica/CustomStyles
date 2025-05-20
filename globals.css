@@ -198,13 +198,22 @@ h3 {
     margin-top: 0;
 }
 
+/* formularios y listados containers */
 .custom-form {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     height: auto;
     overflow-y: visible;
     gap: 1rem;
     padding: var(--padding-container);
     margin-top: var(--margin-top-standard);
+}
+
+.listado-container {
+    padding: var(--padding-container);
+    margin-top: var(--margin-top-standard);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow-y: visible;
 }
