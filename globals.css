@@ -183,6 +183,57 @@ h3 {
     background-color: var(--color-primary-hover);
     box-shadow: var(--box-shadow);
 }
+.submit-btn-small {
+    cursor: pointer;
+    transition: var(--transition-default);
+    background-color: var(--color-primary); 
+    color:white;
+    width: 5rem;
+    padding: 1rem;
+    text-wrap: nowrap;
+    border-radius: var(--border-radius);
+}
+.submit-btn-small:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: var(--box-shadow);
+}
+
+/*Botones de modales */
+
+.password-submit-btn, .password-cancel-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 48%;
+    margin: 0 10px;
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.password-cancel-btn:hover{
+    color: white;
+    background-color: #474646;
+}
+
+.password-submit-btn {
+    background-color: var(--color-primary-hover);
+    color: white;
+}
+
+/* Botón del excel*/
+.submit-btn-excel {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition-default);
+    width: 12rem;
+}
 /* Tarjeta de información del centro */
 .centro-info-card {
     background-color: #f5f8fa;
@@ -216,4 +267,17 @@ h3 {
     flex-direction: column;
     height: auto;
     overflow-y: visible;
+}
+
+
+/* Modales */
+.password-modal-container {
+    width: 100%;
+    background-color: #fff;
+    max-width: 502px;
+    max-height: 81vh;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
