@@ -5,6 +5,7 @@
     --color-background: #f5f5f5;
     --color-text: #333333;
     --color-text-secondary: #555;
+    --color-cancel: #d8d6d6;
     --color-border: #e0e0e0;
     --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     --color-error: #dc3545;
@@ -200,7 +201,7 @@ h3 {
 
 /*Botones de modales */
 
-.password-submit-btn, .password-cancel-btn {
+.landing-submit-btn, .landing-cancel-btn {
     padding: 12px 24px;
     border-radius: 8px;
     font-size: 16px;
@@ -211,13 +212,21 @@ h3 {
     display: inline-block;
     cursor:pointer;
 }
+.landing-cancel-btn {
+    background-color: var(--color-cancel);
+    color: #333;
+}
+.landing-submit-btn {
+    background-color: var(--color-primary);
+    color: white;
+}
 
-.password-cancel-btn:hover{
+.landing-cancel-btn:hover{
     color: white;
     background-color: #474646;
 }
 
-.password-submit-btn {
+.landing-submit-btn:hover {
     background-color: var(--color-primary-hover);
     color: white;
 }
@@ -366,7 +375,7 @@ h3 {
     gap: 16px;
     align-items: flex-end;
 }
-/* BOTONES DE LA TABLA DE LA LANDING */
+/* BOTONES DE LAS TABLAS DE LA LANDING */
 .edit-button, .delete-button {
     background: none;
     border: none;
@@ -394,17 +403,64 @@ h3 {
 
 
 /* Modales */
-.password-modal-container {
+.landing-modal-container {
     width: 100%;
     background-color: #fff;
-    max-width: 502px;
-    max-height: 81vh;
+    max-width: 500px; /* Limitar el ancho máximo */
+    max-height: 80vh; /* Limitar la altura del modal */
     padding: 20px;
-    margin: 0 auto;
+    margin: 0 auto; /* Para centrar el modal */
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+.landing-modal-header {
+    display: flex;
+    justify-content: space-between; /* Esto asegura que el título esté centrado y la cruz a la derecha */
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+.landing-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1; /* Esto asegura que el título ocupe todo el espacio disponible */
+}
+.close-button-landing {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #004B81; 
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 18px; /* Asegura que se alinee correctamente con el encabezado */
+}
+.landing-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
 
+
+.landing-form-group {
+    margin-bottom: 20px; /* Espacio adecuado entre los campos */
+}
+
+.landing-form-input:focus {
+    outline: none;
+    border-color: #004B81; /* Cambiar color del borde al hacer foco */
+    box-shadow: 0 0 5px rgba(0, 75, 129, 0.3); /* Agregar sombra al estar enfocado */
+}
+.landing-form-input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%; /* Hacer que ocupe el 100% del ancho disponible */
+    box-sizing: border-box; /* Esto asegura que el padding no afecte el tamaño total */
+}
 /*Selects de react -igual hay que agregar unos estilos extras dentro del propio select- */
 .react-select__control {
   height: 46px;
@@ -505,7 +561,7 @@ aside {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    padding: 0.9rem 1rem;
+    padding: 0.6rem 1rem;
     margin: 0.4rem 0;
     color: #333;
     border-radius: 10px;
@@ -605,6 +661,8 @@ aside {
     border-left-color: var(--color-primary);
     animation: spin 1s linear infinite;
 }
+
+
 
 @keyframes fadeIn {
     from {
