@@ -435,7 +435,7 @@ h3 {
     cursor: pointer;
     position: absolute;
     right: 15px;
-    top: 18px; /* Asegura que se alinee correctamente con el encabezado */
+    top: 15px; /* Asegura que se alinee correctamente con el encabezado */
 }
 .landing-modal-footer {
     display: flex;
