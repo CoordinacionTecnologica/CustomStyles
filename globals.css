@@ -424,7 +424,7 @@ h3 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/*form grid para el modal */
+/*form grid para el modal de la LANDING */
 .form-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
