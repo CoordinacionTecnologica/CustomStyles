@@ -175,6 +175,7 @@ h3 {
     transition: var(--transition-default);
     background-color: var(--color-primary); 
     color:white;
+    border: none;
     width: 7rem;
     padding: 1rem;
     text-wrap: nowrap;
