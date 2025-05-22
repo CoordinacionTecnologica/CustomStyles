@@ -476,10 +476,29 @@ h3 {
     justify-content: space-between;
     padding: 15px;
 }
+.landing-form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
 
 
 .landing-form-group {
     margin-bottom: 20px; /* Espacio adecuado entre los campos */
+}
+.landing-form-label {
+    display: block;
+    font-weight: 500;
+    color: #004B81;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+.error-message {
+    color: var(--color-error);
+    font-size: 13px;
+    margin-top: 4px;
 }
 
 .landing-form-input:focus {
