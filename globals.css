@@ -437,6 +437,110 @@ h3 {
     align-items: center;
     z-index: 1000;
 }
+
+/* modales de las páginas */
+.modal-container-paginas {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 1200px;
+    max-height: 92vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content-paginas {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: calc(92vh - 120px);
+}
+
+.modal-content-paginas.large {
+    padding: 50px;
+    max-height: calc(100vh - 140px);
+}
+.modal-header-paginas {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header-paginas.large {
+    padding: 20px 30px;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-header-paginas h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.modal-header-paginas.large h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.modal-footer-paginas {
+    padding: 10px 20px;
+    border-top: 1px solid #eee;
+    text-align: right;
+    background-color: #f8f9fa;
+    border-radius: 0 0 10px 10px;
+}
+
+.modal-footer-paginas.large {
+    padding: 15px 30px;
+    border-radius: 0 0 12px 12px;
+}
+.data-section {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.data-section h3 {
+    margin: 0;
+    padding: 10px 15px;
+    background-color: var(--color-background-medium);
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-primary);
+    font-size: 1rem;}
+.data-row {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 3px;
+}
+.data-value {
+    font-size: 0.95rem;
+}
+
+/*PAGINAS CLOSE BUTTON */
+.close-button-paginas {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-button-paginas.large {
+    font-size: 28px;
+}
+
 .landing-modal-container-big {
     background-color: #fff;
     border-radius: 8px;
