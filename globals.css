@@ -162,6 +162,7 @@ h3 {
     background-color: var(--color-primary); 
     color:white;
     width: 10rem;
+    border:none;
     padding: 1rem;
     text-wrap: nowrap;
     border-radius: var(--border-radius);
@@ -199,6 +200,26 @@ h3 {
     background-color: var(--color-primary-hover);
     box-shadow: var(--box-shadow);
 }
+/* botón de enviar de los formularios que los pone a la esquina derecha */
+
+.submit-btn-formulario {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition-default);
+    width: 10rem;
+    margin-left: auto;
+}
+
+.submit-btn-formulario:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: var(--box-shadow);
+}
+
 
 /*Botones de modales */
 
@@ -714,6 +735,19 @@ aside {
     border-radius: 50%;
     border-left-color: var(--color-primary);
     animation: spin 1s linear infinite;
+}
+/* INPUT Y BUSCAR*/
+/* -------------------------------------------------- */
+/* Formulario RRHH: input + botón inline */
+.input-button-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;      /* espacio entre input y botón */
+  margin-top: 0; /* opcional, ajusta separación con la etiqueta */
+}
+
+.input-button-group input {
+  flex: 1;          /* el input ocupa todo el espacio sobrante */
 }
 
 
