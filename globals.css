@@ -736,6 +736,51 @@ aside {
     border-left-color: var(--color-primary);
     animation: spin 1s linear infinite;
 }
+/* ICONOS AWESOME*/
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    margin: 0 5px;
+}
+
+.iconButton:hover {
+    color: var(--color-success);
+}
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;    /* hace que el span posicione relativo a este contenedor */
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;        /* oculto por defecto */
+  white-space: nowrap;       /* evita que el texto rompa línea */
+  background-color: #333;    /* fondo oscuro */
+  color: #fff;               /* texto blanco */
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.875rem;
+  
+  /* posición */
+  position: absolute;
+  bottom: 125%;              /* justo encima del contenedor */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  /* transición suave */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 /* INPUT Y BUSCAR*/
 /* -------------------------------------------------- */
 /* Formulario RRHH: input + botón inline */
@@ -750,6 +795,32 @@ aside {
   flex: 1;          /* el input ocupa todo el espacio sobrante */
 }
 
+/* Badges de estado */
+/* ———————————————— */
+/* Badges con forma de píldora suave */
+.status-badge {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;           /* menos alto, más ancho */
+  font-size: 0.75rem;              /* un pelín más pequeño */
+  font-weight: 400;                /* peso normal */
+  border-radius: 9999px;           /* píldora 100% redondeada */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  text-transform: none;            /* no uppercase, conserva capitalización */
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+
+
+/* colores pastel, contraste suave */
+.status-pending {
+  background-color: #fff4e6;       /* naranja muy pálido */
+  color: #d97706;                  /* naranja oscuro */
+}
+
+.status-validated {
+  background-color: #f0fdf4;       /* verde muy claro */
+  color: #166534;                  /* verde intenso */
+}
 
 
 @keyframes fadeIn {
