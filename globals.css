@@ -67,11 +67,15 @@ main {
     overflow-y: auto;
     height: 100vh;
 }
+h4{
+    margin-top: 0;
+    color: var(--color-primary);
+}
 
 /* Tipografía */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     margin-top: 0;
-    color: var(--color-text-primary);
+    color: var(--color-text);
 }
 
 /* SEPARADORES Y SUBTITULOS */
@@ -140,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text);
     font-size: 14px;
 }
-input[type="text"], input[type="email"], input[type="date"], select {
+input[type="text"],input[type="number"], input[type="email"], input[type="date"], select {
     padding: 10px;
     font-size: 1em;
     font-family: inherit;
@@ -192,11 +196,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 1rem;
 }
 
-/* Tipografía */
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    color: var(--color-text-primary);
-}
+
 
 h1 {
     font-size: 1.8rem;
@@ -1013,4 +1013,14 @@ aside {
   font-size: 0.75rem;
   font-weight: bold;
   margin-left: 10px;
+}
+
+/* Tarjetas informativas reutilizables */
+.info-card {
+  background-color: var(--color-background-medium); /* Suave celeste */
+  border-radius: var(--border-radius-lg); /* 8px */
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-border);
 }
