@@ -499,6 +499,7 @@ h3 {
     border-radius: 10px;
     width: 95%;
     max-width: 1200px;
+    overflow-y: hidden;
     max-height: 92vh;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -506,9 +507,10 @@ h3 {
 }
 
 .modal-content-paginas {
-    padding: 15px;
-    overflow-y: auto;
-    max-height: calc(92vh - 120px);
+  padding: 15px;
+  overflow-y: auto; /* solo aquí scroll */
+  max-height: calc(92vh - 130px); /* alto restante: header (60px aprox) + footer (70px aprox) */
+  flex-grow: 1; /* ocupa todo el espacio disponible */
 }
 
 .modal-content-paginas.large {
@@ -524,6 +526,7 @@ h3 {
     background-color: var(--color-primary);
     color: white;
     border-radius: 10px 10px 0 0;
+    flex-shrink: 0; /* evita que se contraiga */
 }
 
 .modal-header-paginas.large {
