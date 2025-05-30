@@ -1002,9 +1002,13 @@ aside {
   color: #d97706;                  /* naranja oscuro */
 }
 
-.status-validated {
+.status-approved {
   background-color: #f0fdf4;       /* verde muy claro */
   color: #166534;                  /* verde intenso */
+}
+.status-canceled {
+    background-color: #fce8e8; /* rojo claro */
+    color: #b91c1c;            /* rojo oscuro */
 }
 
 /*Notificaciones */
