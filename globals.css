@@ -67,11 +67,15 @@ main {
     overflow-y: auto;
     height: 100vh;
 }
+h4{
+    margin-top: 0;
+    color: var(--color-primary);
+}
 
 /* Tipografía */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     margin-top: 0;
-    color: var(--color-text-primary);
+    color: var(--color-text);
 }
 
 /* SEPARADORES Y SUBTITULOS */
@@ -140,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text);
     font-size: 14px;
 }
-input[type="text"], input[type="email"], input[type="date"], select {
+input[type="text"],input[type="number"], input[type="email"], input[type="date"], select {
     padding: 10px;
     font-size: 1em;
     font-family: inherit;
@@ -192,11 +196,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 1rem;
 }
 
-/* Tipografía */
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    color: var(--color-text-primary);
-}
+
 
 h1 {
     font-size: 1.8rem;
@@ -499,6 +499,7 @@ h3 {
     border-radius: 10px;
     width: 95%;
     max-width: 1200px;
+    overflow-y: hidden;
     max-height: 92vh;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -506,9 +507,10 @@ h3 {
 }
 
 .modal-content-paginas {
-    padding: 15px;
-    overflow-y: auto;
-    max-height: calc(92vh - 120px);
+  padding: 15px;
+  overflow-y: auto; /* solo aquí scroll */
+  max-height: calc(92vh - 130px); /* alto restante: header (60px aprox) + footer (70px aprox) */
+  flex-grow: 1; /* ocupa todo el espacio disponible */
 }
 
 .modal-content-paginas.large {
@@ -524,6 +526,7 @@ h3 {
     background-color: var(--color-primary);
     color: white;
     border-radius: 10px 10px 0 0;
+    flex-shrink: 0; /* evita que se contraiga */
 }
 
 .modal-header-paginas.large {
@@ -1013,4 +1016,22 @@ aside {
   font-size: 0.75rem;
   font-weight: bold;
   margin-left: 10px;
+}
+
+/* Tarjetas informativas reutilizables */
+.info-card {
+  background-color: var(--color-background-medium); /* Suave celeste */
+  border-radius: var(--border-radius-lg); /* 8px */
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-border);
+}
+
+.upload-pdf-container{
+    display: 'flex';
+    flexDirection: 'column';
+    alignItems: 'center';
+    justifyContent: 'center';
+    height: '100%';
 }
