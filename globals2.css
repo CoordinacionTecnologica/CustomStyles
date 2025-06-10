@@ -45,10 +45,7 @@ body, html, #root {
     ;
 }
 
-body {
-    overflow: hidden;
-    /* overflow-y: auto; */
-}
+
 
 /* Layout principal */
 .app {
