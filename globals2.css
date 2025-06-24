@@ -630,6 +630,7 @@ h3 {
     max-width: 1000px;
     max-height: 90vh;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 
 /*form grid para el modal de la LANDING */
@@ -654,6 +655,7 @@ h3 {
     margin: 0 auto; /* Para centrar el modal */
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 .landing-modal-header {
     display: flex;
