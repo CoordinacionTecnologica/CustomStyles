@@ -257,7 +257,21 @@ h3 {
     box-shadow: var(--box-shadow);
 }
 /* botón de enviar de los formularios que los pone a la esquina derecha */
-
+.submit-btn-alternativo{
+    padding: 10px 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submit-btn-alternativo:hover {
+    background-color: var(--color-primary-hover);
+    color: white;
+}
 .submit-btn-formulario {
     background-color: var(--color-primary);
     color: white;
