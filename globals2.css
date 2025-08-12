@@ -1002,6 +1002,134 @@ aside {
   visibility: visible;
   opacity: 1;
 }
+/* Estilos para agregar al archivo globals2.css */
+
+/* Loading container */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* Tabla de administración */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-table thead tr {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.admin-table th {
+    padding: 12px;
+    text-align: left;
+    background-color: var(--color-background-medium);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.admin-table .actions-column {
+    width: 100px;
+    text-align: center;
+}
+
+.admin-table tbody tr {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.admin-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.admin-table tbody tr:hover {
+    background-color: var(--color-background-medium);
+}
+
+.admin-table td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.admin-table .numero-cell {
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.admin-table .actions-cell {
+    text-align: center;
+}
+
+.admin-table .no-data {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background-color: #fff !important;
+}
+
+/* Información de resultados */
+.results-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--color-background-medium);
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+/* Mejoras al input-button-group para la búsqueda */
+.input-button-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-button-group .iconButton {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+    color: #999;
+}
+
+.input-button-group input {
+    padding-right: 35px;
+}
+
+/* Responsive para tabla */
+@media (max-width: 768px) {
+    .admin-table {
+        font-size: 14px;
+    }
+    
+    .admin-table th,
+    .admin-table td {
+        padding: 8px;
+    }
+    
+    .admin-table th:nth-child(3),
+    .admin-table td:nth-child(3) {
+        display: none;
+    }
+    
+    .modules-landing-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .modules-landing-header .title-section {
+        text-align: center;
+    }
+}
 /* INPUT Y BUSCAR*/
 /* -------------------------------------------------- */
 /* Formulario RRHH: input + botón inline */
