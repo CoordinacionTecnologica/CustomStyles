@@ -1453,56 +1453,41 @@ aside {
         border-right-color: rgba(0, 75, 129, 0.3);
     }
 }
-/* Mejoras de espaciado para mobile - Mayor espacio */
+ /* Mejoras adicionales de espaciado mobile - Sin conflictos */
   @media (max-width: 768px) {
-    body {
-      padding: 0 1.5rem; /* 24px de padding lateral */
+    /* Espaciado lateral mejorado solo para contenido principal */
+    .listado-container.tabla-registros-alta {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
-    main {
-      padding: 1.5rem 1rem; /* Mayor padding vertical y horizontal */
-    }
-
-    .form-container,
-    .listado-container {
-      padding: 1.5rem 1rem; /* Espaciado interno más generoso */
-      margin: 0 -0.5rem; /* Compensar el padding del body */
-    }
-
-    /* Mejorar el espaciado de las tarjetas/containers principales */
-    .tabla-registros-alta {
-      padding: 1.25rem 0.75rem;
-    }
-
-    /* Asegurar que los elementos tengan más respiración */
-    .form-group,
+    /* Mayor respiración en las secciones de filtros */
     .filters-section-pagina {
-      padding: 0 0.5rem;
-    }
-
-    /* Mayor espaciado entre secciones */
-    .filters-section-pagina {
-      margin-bottom: 2rem;
-    }
-
-    /* Espaciado adicional para botones */
-    .buttons-container {
-      padding: 1rem 0.5rem;
-      gap: 1rem;
-    }
-  }
-
-  /* Para pantallas muy pequeñas - espaciado generoso pero proporcionado */
-  @media (max-width: 480px) {
-    body {
-      padding: 0 1.25rem; /* Mantener buen espaciado incluso en pantallas pequeñas */
-    }
-
-    main {
-      padding: 1.25rem 0.5rem;
-    }
-
-    .col2 > div {
+      padding: 1rem 1.25rem;
       margin-bottom: 1.5rem;
     }
+
+    /* Mejor espaciado en grids de filtros */
+    .filters-grid-pagina {
+      padding: 0.5rem;
+    }
+
+    /* Espaciado mejorado para contenedores de tabla */
+    .table-container {
+      margin: 0.75rem 0;
+    }
   }
+
+  @media (max-width: 480px) {
+    /* Espaciado específico para pantallas muy pequeñas */
+    .listado-container.tabla-registros-alta {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .filters-section-pagina {
+      padding: 0.75rem 1rem;
+    }
+  }
+
+
