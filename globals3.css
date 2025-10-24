@@ -986,6 +986,12 @@ aside {
     box-sizing: border-box;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+div.action-button.landing-button:first-of-type {
+    background-color: #004b81;
+    color: white;
+}
+
 .user-name {
     display: flex;
     align-items: center;
