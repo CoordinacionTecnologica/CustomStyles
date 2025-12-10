@@ -198,6 +198,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 1rem;
 }
 
+/* fila seleccionada ejemplo monodroga */
+.fila-seleccionada {
+  background-color: #f0fdf4 !important;
+  border-left: 4px solid #86efac;
+  transition: 0.2s ease;
+}
 
 
 h1 {
