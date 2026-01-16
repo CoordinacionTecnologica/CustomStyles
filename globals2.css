@@ -223,6 +223,7 @@ h3 {
 .aa-btn {
     height: 46px;
     padding: 0 20px;
+    background-color: var(--color-primary);
     font-size: 14px;
     font-family: inherit;
     font-weight: 600;
