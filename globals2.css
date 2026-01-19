@@ -8,6 +8,12 @@
     --color-text-secondary: #555;
     --color-cancel: #d8d6d6;
     --color-border: #e0e0e0;
+    --color-success: #28a745;
+    --color-success-hover: #218838;
+    --color-warning: #ffc107;
+    --color-warning-hover: #e0a800;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     --color-error: #dc3545;
     --color-primary-hover: #003366;
