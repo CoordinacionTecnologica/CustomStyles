@@ -52,9 +52,8 @@ body, html, #root {
 }
 
 /* erores, pinta el borde */
-input.input-error,
-select.input-error {
-    border: 1px solid #e53935;
+.input-error {
+    border-color: #e53935;
     box-shadow: 0 0 0 1px rgba(229, 57, 53, 0.4);
 }
 
