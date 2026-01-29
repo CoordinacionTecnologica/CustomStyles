@@ -57,7 +57,7 @@ body, html, #root {
 }
 
 .input-error {
-  border-color: #e53935;
+  border-color: #A6341E;
   box-shadow: 0 0 0 1px rgba(229, 57, 53, 0.4);
 }
 
