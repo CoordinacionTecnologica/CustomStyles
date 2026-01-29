@@ -56,13 +56,6 @@ body, html, #root {
   border: 2px solid red;
 }
 
-.input-error {
-  border-color: #A6341E;
-  box-shadow: 0 0 0 1px rgba(229, 57, 53, 0.4);
-}
-
-
-
 /* Layout principal */
 .app {
     margin: 0;
