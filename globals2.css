@@ -311,13 +311,13 @@ h3 {
     cursor: pointer;
     transition: var(--transition-default);
     background-color: var(--color-primary); 
-    color:white;
+    color: white;
     border: none;
-    width: 7rem;
-    padding: 1rem;
-    text-wrap: nowrap;
+    padding: 1rem 1.25rem;
+    white-space: nowrap;
     border-radius: var(--border-radius-lg);
 }
+
 .submit-btn-medium:hover {
     background-color: var(--color-primary-hover);
     box-shadow: var(--box-shadow);
