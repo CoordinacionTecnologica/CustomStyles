@@ -1321,18 +1321,21 @@ aside {
 }
 
 .badge-vencimiento.vigente {
-  background-color: #e8f5e9;
-  color: #2e7d32;
+  background-color: #d1fae5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
 }
 
 .badge-vencimiento.proximo {
   background-color: #fff3e0;
   color: #e65100;
+  border: 1px solid #d1fae5;
 }
 
 .badge-vencimiento.vencido {
-  background-color: #ffebee;
-  color: #c62828;
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
 }
 
 .badge-vencimiento svg {
