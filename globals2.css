@@ -324,6 +324,7 @@ h3 {
 }
 
 .submit-btn-medium-medium {
+    padding: 10px
     cursor: pointer;
     transition: var(--transition-default);
     background-color: var(--color-primary); 
