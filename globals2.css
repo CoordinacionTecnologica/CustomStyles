@@ -322,6 +322,17 @@ h3 {
     background-color: var(--color-primary-hover);
     box-shadow: var(--box-shadow);
 }
+
+.submit-btn-medium-medium {
+    cursor: pointer;
+    transition: var(--transition-default);
+    background-color: var(--color-primary); 
+    color: white;
+    border: none;
+    white-space: nowrap;
+    border-radius: var(--border-radius-lg);
+}
+
 .submit-btn-small {
     cursor: pointer;
     transition: var(--transition-default);
